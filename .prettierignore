@@ -1,0 +1,6 @@
+node_modules
+.git
+.env
+nodemon.json
+package.json
+.eslintrc.json
