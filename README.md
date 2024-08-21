@@ -100,7 +100,6 @@ coming soon.
 
 
 
-# Guestara
 API collection for guestara assignment
 # 📁 Folder: Category 
 
