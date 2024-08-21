@@ -4,3 +4,4 @@ node_modules
 nodemon.json
 package.json
 .eslintrc.json
+package-lock.json
