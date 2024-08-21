@@ -96,12 +96,12 @@ Fix Lint Issues
 Insert gif or link to demo
 
 coming soon.
-# API Reference
+## API Reference
 
 
 
 API collection for guestara assignment
-# 📁 Folder: Category 
+## 📁 Folder: Category 
 
 
 ## End-point: Create Category
