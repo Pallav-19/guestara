@@ -27,28 +27,6 @@ categorySchema.pre('validate', function (next) {
   next();
 });
 
-categorySchema.pre('findOneAndUpdate', async function (next) {
-  const update = this.getUpdate();
-
-  if (update.taxApplicability === false) {
-    update.tax = 0;
-    update.taxType = null;
-  }
-
-  next();
-});
-
-categorySchema.pre('updateOne', async function (next) {
-  const update = this.getUpdate();
-
-  if (update.taxApplicability === false) {
-    update.tax = 0;
-    update.taxType = null;
-  }
-
-  next();
-});
-
 const Category = mongoose.model('Category', categorySchema);
 
 export default Category;
