@@ -6,7 +6,7 @@ import startApplication from './utilities/startApplication.js';
 
 const start = () => {
   if (process.env.NODE_ENV === NODE_ENVIRONMENTS.DEV)
-    exec('npm run lint:fix', (err, stdout, stderr) => {
+    exec('npm run lint', (err, stdout, stderr) => {
       if (err) {
         error('Linting failed:', stderr, stdout);
         process.exit(1);
