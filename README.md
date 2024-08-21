@@ -71,7 +71,8 @@ Fix Lint Issues
 - linting and formatting in development mode.
 - pre commit hook to ensure everything is formatted well before pushing.
 - MVC with Services Architecture.
-- CI/CD pipeline for auto deployment.
+- hosted on ec2.
+- CI/CD pipeline for auto deployment on push.
 - SSL certificaate added and https enabled in deployment.
 - custom domain added.
 - clean code.
