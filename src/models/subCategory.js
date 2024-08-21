@@ -5,9 +5,21 @@ const subCategorySchema = new mongoose.Schema(
     name: { type: String, required: true, unique: true, trim: true },
     image: { type: String, trim: true },
     description: { type: String, trim: true },
-    taxApplicability: { type: Boolean, default: false },
-    tax: Number,
     category: { type: mongoose.Schema.Types.ObjectId, ref: 'Category', required: true },
+    taxApplicability: {
+      type: Boolean,
+      default: function () {
+        if (this.taxApplicability !== null) return this.taxApplicability;
+        return this.category.taxApplicability;
+      },
+    },
+    tax: {
+      type: Number,
+      default: function () {
+        if (this.tax !== null) return this.tax;
+        return this.category.tax;
+      },
+    },
   },
   { timestamps: true }
 );

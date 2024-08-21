@@ -1,8 +1,8 @@
 import Router from '../router.js';
-import categoryRoutes from './category.routes.js';
+import categoryRouter from './category.routes.js';
 
 const router = new Router();
 
-router.use('/category', categoryRoutes);
+router.use('/category', categoryRouter);
 
 export default router;
