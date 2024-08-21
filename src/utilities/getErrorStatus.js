@@ -1,0 +1,50 @@
+import ERROR_NAMES from '../constants/errorNames.js';
+import HTTP_STATUS_CODES from '../constants/httpStatusCodes.js';
+
+const getErrorStatus = (errorName) => {
+  switch (errorName) {
+    case ERROR_NAMES.VALIDATION_ERROR:
+      return HTTP_STATUS_CODES.BAD_REQUEST;
+
+    case ERROR_NAMES.CAST_ERROR:
+      return HTTP_STATUS_CODES.BAD_REQUEST;
+
+    case ERROR_NAMES.MONGO_ERROR:
+      return HTTP_STATUS_CODES.CONFLICT;
+
+    case ERROR_NAMES.JSON_WEB_TOKEN_ERROR:
+      return HTTP_STATUS_CODES.UNAUTHORIZED;
+
+    case ERROR_NAMES.TOKEN_EXPIRED_ERROR:
+      return HTTP_STATUS_CODES.UNAUTHORIZED;
+
+    case ERROR_NAMES.SYNTAX_ERROR:
+      return HTTP_STATUS_CODES.BAD_REQUEST;
+
+    case ERROR_NAMES.NOT_FOUND_ERROR:
+      return HTTP_STATUS_CODES.NOT_FOUND;
+
+    case ERROR_NAMES.UNAUTHORIZED_ERROR:
+      return HTTP_STATUS_CODES.UNAUTHORIZED;
+
+    case ERROR_NAMES.FORBIDDEN_ERROR:
+      return HTTP_STATUS_CODES.FORBIDDEN;
+
+    case ERROR_NAMES.TYPE_ERROR:
+      return HTTP_STATUS_CODES.INTERNAL_SERVER_ERROR;
+
+    case ERROR_NAMES.REFERENCE_ERROR:
+      return HTTP_STATUS_CODES.INTERNAL_SERVER_ERROR;
+
+    case ERROR_NAMES.RANGE_ERROR:
+      return HTTP_STATUS_CODES.INTERNAL_SERVER_ERROR;
+
+    case ERROR_NAMES.CUSTOM_ERROR:
+      return HTTP_STATUS_CODES.BAD_REQUEST;
+
+    default:
+      return HTTP_STATUS_CODES.INTERNAL_SERVER_ERROR;
+  }
+};
+
+export default getErrorStatus;

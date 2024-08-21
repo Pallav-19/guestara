@@ -1,8 +1,8 @@
-const handleController = (promise) =>
-  promise
-    .then((data) => data)
+const handleController = (promise, res, next) =>
+  Promise.resolve(promise)
+    .then((result) => res.status(200).json(result))
     .catch((err) => {
-      throw err;
+      next(err);
     });
 
 export default handleController;
