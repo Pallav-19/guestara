@@ -4,21 +4,6 @@
 Local setup and API documentations
 
 
-## Postman Collection
-
-#### Click here to get the postman documentation
-[Collection](https://documenter.getpostman.com/view/16563017/2sA3sAioVp)
-
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`ATLAS_URI`
-
-`PORT`
-
-
 ## Tech Stack
 
 
@@ -29,6 +14,15 @@ To run this project, you will need to add the following environment variables to
 **hooks:** husky for pre-commit hook
 
 **deployment:** AWS EC2
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`ATLAS_URI`
+
+`PORT`
 
 
 ## Run Locally
@@ -91,12 +85,18 @@ Fix Lint Issues
 - JSDoc generated documentation
 - swagger documentation.
 - adding another layer of repositiories below services to make the code base Repository Model.
+## Postman Collection
+
+#### Click here to get the postman documentation
+[Collection](https://documenter.getpostman.com/view/16563017/2sA3sAioVp)
+
+
 ## Demo
 
 Insert gif or link to demo
 
 coming soon.
-## API Documentation
+# Guestara
 
 Local setup and API documentations. coming soon ...
 
