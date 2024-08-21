@@ -91,11 +91,6 @@ Fix Lint Issues
 [Collection](https://documenter.getpostman.com/view/16563017/2sA3sAioVp)
 
 
-## Demo
-
-Insert gif or link to demo
-
-coming soon.
 ## API Reference
 
 
