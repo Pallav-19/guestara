@@ -3,7 +3,9 @@ import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 
-import corsOptions from './config/corsOptions.js';
+import corsOptions from './configurations/corsOptions.js';
+import errorHandler from './middlewares/errorHandler.js';
+import appRoutes from './routes/index.routes.js';
 
 dotenv.config();
 
@@ -21,6 +23,10 @@ app.use(express.json());
 //used for parsing data sent from html form using header Content-Type: application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
 
-// the http server instance
+// middleware to narrow down all the APIs
+app.use('/api', appRoutes);
+
+//error handler middleware
+app.use(errorHandler);
 
 export default app;

@@ -14,7 +14,7 @@
     "no-underscore-dangle": "off",
     "class-methods-use-this": "off",
     "prefer-destructuring": ["error", { "object": true, "array": false }],
-    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val|_" }],
+    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next|val|_|err" }],
     "import/no-extraneous-dependencies": "off",
     "import/no-unresolved": "error",
     "import/extensions": "off"
