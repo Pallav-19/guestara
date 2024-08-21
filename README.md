@@ -96,7 +96,7 @@ Fix Lint Issues
 Insert gif or link to demo
 
 coming soon.
-# Guestara
+## API Documentation
 
 Local setup and API documentations. coming soon ...
 
